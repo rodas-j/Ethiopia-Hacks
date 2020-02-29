@@ -4,13 +4,13 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="592.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HQ">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="592.0" prefWidth="600.0" styleClass="css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HQ">
    <left>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
             <ScrollPane prefHeight="495.0" prefWidth="200.0">
                <content>
-                  <TableView fx:id="constituency" prefHeight="580.0" prefWidth="200.0">
+                  <TableView fx:id="constituency" onMouseClicked="#viewCon" prefHeight="580.0" prefWidth="200.0">
                     <columns>
                       <TableColumn fx:id="conColumn" prefWidth="183.0" text="Constituencies" />
                     </columns>

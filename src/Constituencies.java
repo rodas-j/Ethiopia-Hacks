@@ -1,3 +1,8 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
 public class Constituencies {
     String name;
 
@@ -16,4 +21,16 @@ public class Constituencies {
     public void setName(String name) {
         this.name = name;
     }
+}
+
+class ElectionDatabase {
+    static Connection connection;
+    static Statement statement;
+
+    ElectionDatabase() throws SQLException {
+        connection = DriverManager.getConnection("jdbc:mysql://localhost/election", "root", "1234");
+        statement = connection.createStatement();
+    }
+
+
 }
