@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="592.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HQ">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ScrollPane prefHeight="495.0" prefWidth="200.0">
+               <content>
+                  <TableView fx:id="constituency" prefHeight="580.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn fx:id="conColumn" prefWidth="183.0" text="Constituencies" />
+                    </columns>
+                  </TableView>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </left>
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Region prefHeight="100.0" prefWidth="112.0" />
+            <Label alignment="CENTER" prefHeight="100.0" prefWidth="490.0" text="HQ">
+               <font>
+                  <Font size="53.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ScrollPane prefHeight="491.0" prefWidth="399.0">
+               <content>
+                  <TableView fx:id="pollingStations" prefHeight="488.0" prefWidth="396.0">
+                    <columns>
+                      <TableColumn fx:id="pollingColumn" prefWidth="224.0" text="Polling Station" />
+                      <TableColumn fx:id="progressColumn" prefWidth="171.0" text="Progress" />
+                    </columns>
+                  </TableView>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
