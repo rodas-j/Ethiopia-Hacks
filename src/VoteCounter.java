@@ -24,7 +24,7 @@ public class VoteCounter extends Application implements Initializable {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("voteCounter.fxml"));
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("Vote Counter");
         primaryStage.setScene(new Scene(root, 600, 400));
         primaryStage.show();
     }

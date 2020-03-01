@@ -130,19 +130,16 @@ public class VoteCounter implements Initializable {
 
     private void tokG(int k) {
         this.g++;
-        System.out.println(red);
         green.set(String.format("%04d", g));
     }
 
     private void tokY(int k) {
         this.y++;
-        System.out.println(yellow);
         yellow.set(String.format("%04d", y));
     }
 
     private void tokR(int k) {
         this.r++;
-        System.out.println();
         red.set(String.format("%04d", r));
     }
 

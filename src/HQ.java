@@ -63,8 +63,6 @@ public class HQ extends Application implements Initializable {
             e.printStackTrace();
         }
 
-        System.out.println(pollingStations.getColumns());
-        System.out.println(constituency.getColumns());
     }
 
 

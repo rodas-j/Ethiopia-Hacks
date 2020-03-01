@@ -2,6 +2,7 @@
 import com.HQ;
 import com.PollingStationResult;
 import com.VoteCounter;
+import com.Winning;
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
@@ -24,8 +25,8 @@ public class Simulator extends Application implements Initializable {
     public Label counter;
     Timeline simulatorTimeline = new Timeline();
     Timeline timeline = new Timeline();
-    private IntegerProperty timeSeconds = new SimpleIntegerProperty(0);
-    int remainingSeconds = 0;
+    private IntegerProperty timeSeconds = new SimpleIntegerProperty(1);
+    int remainingSeconds = 1;
 
     @Override
     public void start(Stage primaryStage) throws Exception{
@@ -53,9 +54,17 @@ public class Simulator extends Application implements Initializable {
             }
         }));
         timeline.setCycleCount(120);
+        timeline.setOnFinished(e -> {
+            Winning winning = new Winning();
+            try {
+                winning.displayWindow();
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
+        });
         simulatorTimeline.getKeyFrames().add(
                 new KeyFrame(Duration.seconds(120+1),
-                        new KeyValue(timeSeconds, 10)));
+                        new KeyValue(timeSeconds, 5)));
 
 
     }

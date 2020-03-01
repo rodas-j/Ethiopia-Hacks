@@ -11,7 +11,7 @@
             <Font name="Arial Black" size="28.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="126.0" layoutY="78.0" prefHeight="35.0" prefWidth="115.0" text="Tibebu Abera">
+      <Label alignment="CENTER" layoutX="126.0" layoutY="78.0" prefHeight="35.0" prefWidth="115.0" text="Mr. A">
          <font>
             <Font name="Arial Rounded MT Bold" size="15.0" />
          </font>
