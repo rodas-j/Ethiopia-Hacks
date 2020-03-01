@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="348.0" prefWidth="329.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.PollingStationResult">
+   <children>
+      <Label alignment="CENTER" layoutX="54.0" layoutY="35.0" prefHeight="43.0" prefWidth="257.0" text="Congratuations">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="126.0" layoutY="78.0" prefHeight="35.0" prefWidth="115.0" text="Tibebu Abera">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Label>
+      <Region blendMode="ADD" layoutX="6.0" prefHeight="136.0" prefWidth="329.0" style="-fx-background-color: #C62828;" />
+   </children>
+</AnchorPane>

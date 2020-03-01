@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.VoteCounter">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Ball. No." />
+      <TextField layoutX="71.0" layoutY="10.0" style="-fx-background-color: white; -fx-border-color: black;" />
+      <Button layoutX="81.0" layoutY="152.0" mnemonicParsing="false" onAction="#redButtonHandler" prefHeight="97.0" prefWidth="113.0" style="-fx-background-color: #D50000;" text="Red" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font></Button>
+      <Button layoutX="244.0" layoutY="152.0" mnemonicParsing="false" onAction="#yellowButtonHandler" prefHeight="97.0" prefWidth="113.0" style="-fx-background-color: #FFDE03;" text="Yellow" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font></Button>
+      <Button layoutX="400.0" layoutY="152.0" mnemonicParsing="false" onAction="#greenButtonHandler" prefHeight="97.0" prefWidth="113.0" style="-fx-background-color: #0336FF;" text="Blue" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font></Button>
+      <Button layoutX="467.0" layoutY="343.0" mnemonicParsing="false" style="-fx-background-color: #03DAC6;" text="Finish" />
+      <Label fx:id="redLabel" alignment="CENTER" layoutX="81.0" layoutY="82.0" prefHeight="59.0" prefWidth="113.0" text="0" textAlignment="CENTER">
+         <font>
+            <Font size="41.0" />
+         </font></Label>
+      <Label fx:id="yellowLabel" alignment="CENTER" layoutX="245.0" layoutY="82.0" prefHeight="59.0" prefWidth="113.0" text="0">
+         <font>
+            <Font size="41.0" />
+         </font></Label>
+      <Label fx:id="greenLabel" alignment="CENTER" layoutX="401.0" layoutY="82.0" prefHeight="59.0" prefWidth="113.0" text="0">
+         <font>
+            <Font size="41.0" />
+         </font></Label>
+      <Button layoutX="244.0" layoutY="10.0" mnemonicParsing="false" onAction="#faultyHandler" style="-fx-background-color: #03DAC6;" text="Faulty" />
+      <Button layoutX="301.0" layoutY="10.0" mnemonicParsing="false" onAction="#invalidHandler" style="-fx-background-color: #03DAC6;" text="Invalid" />
+      <Button contentDisplay="CENTER" layoutX="90.0" layoutY="262.0" mnemonicParsing="false" onAction="#redButtonHandler" prefHeight="34.0" prefWidth="38.0" style="-fx-background-color: #03DAC6; -fx-border-radius: 50px;" text="+" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Symbol" size="17.0" />
+         </font></Button>
+      <Button contentDisplay="CENTER" layoutX="146.0" layoutY="262.0" mnemonicParsing="false" onAction="#redSubHandler" prefHeight="34.0" prefWidth="38.0" style="-fx-background-color: #03DAC6;" text="-" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Symbol" size="17.0" />
+         </font></Button>
+      <Button contentDisplay="CENTER" layoutX="254.0" layoutY="262.0" mnemonicParsing="false" onAction="#yellowButtonHandler" prefHeight="34.0" prefWidth="38.0" style="-fx-background-color: #03DAC6;" text="+" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Symbol" size="17.0" />
+         </font></Button>
+      <Button contentDisplay="CENTER" layoutX="308.0" layoutY="262.0" mnemonicParsing="false" onAction="#yellowSubHandler" prefHeight="34.0" prefWidth="38.0" style="-fx-background-color: #03DAC6;" text="-" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Symbol" size="17.0" />
+         </font></Button>
+      <Button contentDisplay="CENTER" layoutX="408.0" layoutY="262.0" mnemonicParsing="false" onAction="#greenButtonHandler" prefHeight="34.0" prefWidth="38.0" style="-fx-background-color: #03DAC6;" text="+" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Symbol" size="17.0" />
+         </font></Button>
+      <Button contentDisplay="CENTER" layoutX="457.0" layoutY="262.0" mnemonicParsing="false" onAction="#greenSubHandler" prefHeight="34.0" prefWidth="38.0" style="-fx-background-color: #03DAC6;" text="-" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Symbol" size="17.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

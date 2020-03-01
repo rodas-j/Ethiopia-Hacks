@@ -80,4 +80,6 @@ public class VoteCounter extends Application implements Initializable {
         yellowLabel.textProperty().bind(yellow);
         greenLabel.textProperty().bind(green);
     }
+
+
 }
